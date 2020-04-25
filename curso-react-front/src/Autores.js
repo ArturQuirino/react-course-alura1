@@ -18,9 +18,7 @@ class Autores extends Component {
 
   componentDidMount() {
     ApiService.ListaNomes()
-      .then((res) => ApiService.TrataErros(res))
       .then((res) => {
-
         if (res.message === 'success') {
           this.setState({ nomes: [...this.state.nomes, ...res.data] });
         }

@@ -18,7 +18,6 @@ class Livros extends Component {
 
   componentDidMount() {
     ApiService.ListaLivros()
-      .then((res) => ApiService.TrataErros(res))
       .then((res) => {
         if (res.message === 'success') {
           this.setState({ livros: [...this.state.livros, ...res.data] })
