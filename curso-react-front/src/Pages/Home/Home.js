@@ -1,12 +1,12 @@
 import React, { Component, Fragment }from 'react';
 import 'materialize-css/dist/css/materialize.min.css';
 
-import './App.css';
-import Header from './Header';
-import Tabela from './Tabela';
-import Form from './Formulario';
-import PopUp from './PopUp';
-import ApiService from './ApiService';
+import './Home.css';
+import Header from './../../Components/Header/Header';
+import Tabela from '../../Components/Tabela/Tabela';
+import Form from './../../Components/Formulario/Formulario';
+import PopUp from '../../utils/PopUp';
+import ApiService from '../../utils/ApiService';
 
 class App extends Component {
   constructor(props){

@@ -1,9 +1,9 @@
 import React, { Component, Fragment } from 'react';
-import Header from './Header';
+import Header from './../../Components/Header/Header';
 
-import DataTable from './DataTable';
-import ApiService from './ApiService';
-import PopUp from './PopUp'
+import DataTable from '../../Components/DataTable/DataTable';
+import ApiService from '../../utils/ApiService';
+import PopUp from '../../utils/PopUp'
 
 class Autores extends Component {
 
